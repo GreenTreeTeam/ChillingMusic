@@ -22,5 +22,5 @@ app.get("/song/:id", (req, res) => {
 })
 
 app.listen(3000, () => {
-  console.log("Epic")
+  console.log("Chilling Music has been started!")
 })
