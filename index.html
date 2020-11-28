@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon"
+        href="https://cdn.discordapp.com/attachments/774541906024726548/775723059708952616/Chilling_Music_1.png"
+        type="image/png" sizes="16x16">
+    <title>Chilling Music</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <h1>Chilling Music - Radio(browser)</h1>
+    <hr>
+    <h2>Control Buttons</h2>
+    <div class="text-center" style="color: black;background-color: #007bff;">
+        <button class="button" id="play">Play</button>
+        <button class="button" id="pause">Pause</button>
+        <button class="button" id="restart">Restart</button>
+        <button class="button" id="playdafkingnextsong">Next Song</button>
+    </div>
+    <hr>
+    <h2>Music Information</h2>
+    <br>
+    <div id="author"></div>
+    <div id="name"></div>
+    <div id="length"></div>
+    <div id="source"></div>
+    <div id="currentTime"></div>
+    <br>
+    <br>
+    <div id="status" style="color:red;">Status: Loading</div>
+    <progress id="MusicProgress"> 32% </progress>
+    <br>
+    <h1>Play custom song with ID</h1>
+    <input id="customSongInput" type="text" />
+    <input id="CustomSongSubmit" type="submit" name="" value="submit"/>
+    <br>
+    <br>
+    <h1>Songs</h1>
+    <table id="SongsTable" style="width:25%">
+        <tr>
+            <th>Song ID</th>
+            <th>Song Name</th>
+            <th>Song Author</th>
+        </tr>
+    </table>
+    <div id="snackbar">Hello</div>
+</body>
+
+</html>

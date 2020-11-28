@@ -1,0 +1,17 @@
+{
+  "name": "chillingmusic",
+  "version": "1.0.0",
+  "description": "https://chillingmusic.cf",
+  "main": "index.js",
+  "scripts": {
+    "test": "yarn start"
+  },
+  "keywords": [
+    "Music"
+  ],
+  "author": "SudhanPlayz",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
