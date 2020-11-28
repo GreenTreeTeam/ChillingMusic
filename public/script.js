@@ -72,7 +72,7 @@ $(document).ready(function () {
 
     $("#CustomSongSubmit").on("click", function () {
         event.preventDefault()
-        let val = parseInt($('#customSongInput').val())+1
+        let val = parseInt($('#customSongInput').val())
         $.get("/song/" + val, function (data) {
             if (data === "404") {
                 return toast("Invalid song returned 404")
