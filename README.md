@@ -1,2 +1,2 @@
 # Chilling-Music
-An official github repo of Chilling Music! Listen to the music, Enjoy! Open Source 
+Welcome to Chilling Music, The place where you can listen to music and relax and enjoy your time 24/7!
