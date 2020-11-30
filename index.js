@@ -18,7 +18,7 @@ app.get("/random", (req, res) => {
 
 app.get("/song/:id", (req, res) => {
   if(req.params.id)return res.send(songs[req.params.id]?songs[req.params.id]:"404")
-  else return res.send("song id missing u nub")
+  else return res.send("Song ID is missing")
 })
 
 app.listen(3000, () => {
