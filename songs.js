@@ -215,6 +215,216 @@ const songs = [
         author: "Marshmello",
         url: "https://cdn.discordapp.com/attachments/775740994595323954/782129612690948106/Marshmello_-_Here_With_Me_Feat._CHVRCHES_OfficialMP3_160K.mp3"
     },
+    {
+        name: "Échame La Culpa",
+        author: "Luis Fonsi, Demi Lovato",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129660301279252/Luis_Fonsi__Demi_Lovato_-_Echame_La_Culpa_Video_OMP3_128K.mp3"
+    },
+    {
+        name: "Slow Down",
+        author: "Selena Gomez",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129669578424330/Selena_Gomez_-_Slow_Down_OfficialMP3_128K.mp3"
+    },
+    {
+        name: "On my Way",
+        author: "Alan Walker",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129671055605760/Alan_Walker__Sabrina_Carpenter___Farruko_-_On_MyMP3_128K.mp3"
+    },
+    {
+        name: "Summer",
+        author: "Marshmello",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129702650773544/Marshmello_-_Summer_Official_Music_Video_with_LeMP3_160K.mp3"
+    },
+    {
+        name: "Can't Blame a Girl for Trying",
+        author: "Sabrina Carpenter",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129754987692082/Sabrina_Carpenter_-_Can_t_Blame_a_Girl_for_TryingMP3_160K.mp3"
+    },
+    {
+        name: "Baby",
+        author: "Justin Bieber ft Ludacris",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129781373272084/Justin_Bieber_-_Baby_ft._Ludacris_Official_MusicMP3_128K.mp3"
+    },
+    {
+        name: "Love You Like a Love Song",
+        author: "Selena Gomez",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129797354618880/Selena_Gomez___The_Scene_-_Love_You_Like_A_Love_SoMP3_128K.mp3"
+    },
+    {
+        name: "We don't talk anymore",
+        author: "Charlie Puth",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129797403770900/Charlie_Puth_-_We_Don_t_Talk_Anymore_feat._SelenaMP3_128K.mp3"
+    },
+    {
+        name: "Despacito",
+        author: "Justin Bieber & Luis foni ",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129852181381121/Justin_Bieber_Despacito_Lyrics_--_ft._Luis_FonMP3_128K.mp3"
+    },
+    {
+        name: "Yummy",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129879637950464/Justin_Bieber_-_Yummy_Official_VideoMP3_128K.mp3"
+    },
+    {
+        name: "PLAY",
+        author: "Alan Walker ft Tungevaag",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129886810603530/Alan_Walker__K-391__Tungevaag__Mangoo_-_PLAY_AlanMP3_160K.mp3"
+    },
+    {
+        name: "Girls Like You",
+        author: "Maroon 5",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129896729214982/Maroon_5_-_Girls_Like_You_Lyrics_ft._Cardi_BMP3_128K.mp3"
+    },
+    {
+        name: "Alone pt II/2 ",
+        author: "Alan Walker",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129915348385822/Alan_Walker___Ava_Max_-_Alone__Pt._IIMP3_128K.mp3"
+    },
+    {
+        name: "Mistletoe",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129951695962142/Justin_Bieber_-_Mistletoe_Official_Music_VideoMP3_160K.mp3"
+    },
+    {
+        name: "Me Necesita",
+        author: "PRETTYMUCH, CNCO",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129959174012928/PRETTYMUCH__CNCO_-_Me_Necesita_Official_VideoMP3_160K.mp3"
+    },
+    {
+        name: "Senorita",
+        author: "Shawn_Mendes,Camila_Cabello",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782129973439102986/Shawn_Mendes__Camila_Cabello_-_Senorita_LyricsMP3_160K.mp3"
+    },
+    {
+        name: "Ghost",
+        author: "Au/Ra, Alan Walker",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130010088669204/Au_Ra__Alan_Walker_-_Ghost_Official_VideoMP3_160K.mp3"
+    },
+    {
+        name: "Sorry",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130017793998848/Justin_Bieber_-_Sorry_Official_Lyric_VideoMP3_160K.mp3"
+    },
+    {
+        name: "I'll Show You",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130047695585310/Justin_Bieber_-_I_ll_Show_You_Official_Music_VideMP3_160K.mp3"
+    },
+    {
+        name: "Alone",
+        author: "Marshmello",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130063050014732/Marshmello_-_Alone_Official_Music_VideoMP3_160K.mp3"
+    },
+    {
+        name: "Liar",
+        author: "Camila Cabello",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130071020371978/Camila_Cabello_-_Liar_LyricsMP3_160K.mp3"
+    },
+    {
+        name: "Strongest",
+        author: "Alan Walker ,Ina Wroldsen",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130079047221268/Alan_Walker___Ina_Wroldsen_-_Strongest_LyricsMP3_160K.mp3"
+    },
+    {
+        name: "My Oh My",
+        author: "Camila Cabello, DaBaby",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130082893398036/Camila_Cabello_-_My_Oh_My_Lyrics_ft._DaBabyMP3_160K.mp3"
+    },
+    {
+        name: "Believer",
+        author: "Imagine Dragon",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130083555966986/Imagine_Dragons_-_Believer_LyricsMP3_160K.mp3"
+    },
+    {
+        name: "Heading Home",
+        author: "Alan Walker ,Ruben",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130090208133120/Alan_Walker___Ruben_Heading_Home_Official_MusicMP3_160K.mp3"
+    },
+    {
+        name: "Company",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130102266757120/Justin_Bieber_-_Company_Official_Music_VideoMP3_160K.mp3"
+    },
+    {
+        name: "Sorry (PURPOSE : The Movement)",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130111000477756/Justin_Bieber_-_Sorry_PURPOSE___The_MovementMP3_160K.mp3"
+    },
+    {
+        name: "Bad Boys for Life",
+        author: "Ritmo",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130127374385162/RITMO_Bad_Boys_For_Life_Remix___Official_MusiMP3_160K.mp3"
+    },
+    {
+        name: "Lost Control",
+        author: "Alan Walker",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130131912228874/Alan_Walker_Lost_Control_Lyrics_ft._SoranaMP3_160K.mp3"
+    },
+    {
+        name: "Closer",
+        author: "The Chainsmokers",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130132722384907/The_Chainsmokers_-_Closer_Lyric_ft._HalseyMP3_128K.mp3"
+    },
+    {
+        name: "Shameless",
+        author: "Camila Cabello",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130170789101578/Camila_Cabello_-_ShamelessMP3_160K.mp3"
+    },
+    {
+        name: "Unity",
+        author: "Alan Walker",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130173805985792/Alan_x_Walkers_-_UnityMP3_160K.mp3"
+    },
+    {
+        name: "One Less Lonely Girl",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130199692443678/Justin_Bieber_-_One_Less_Lonely_Girl_Official_MusMP3_160K.mp3"
+    },
+    {
+        name: "Together",
+        author: "Marshmello",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130204519694336/Marshmello_-_Together_Official_Music_VideoMP3_160K.mp3"
+    },
+    {
+        name: "Come & Get It",
+        author: "Selena Gomez",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130215966605332/Selena_Gomez_-_Come___Get_ItMP3_128K.mp3"
+    },
+    {
+        name: "Boy With Luv",
+        author: "BTS",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130258811289620/BTS____Boy_With_Luv_feat._HalMP3_160K.mp3"
+    },
+    {
+        name: "Rockabye",
+        author: "Clean Bandit",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130262342893618/Clean_Bandit_-_Rockabye_feat._Sean_Paul___Anne-MaMP3_160K.mp3"
+    },
+    {
+        name: "Blank Space",
+        author: "Taylor Swift",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130294697885696/Taylor_Swift_-_Blank_SpaceMP3_160K.mp3"
+    },
+    {
+        name: "What Do You Mean",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130340311203840/Justin_Bieber_-_What_Do_You_Mean__Official_MusicMP3_160K.mp3"
+    },
+    {
+        name: "As Long As You Love Me",
+        author: "Justin Bieber",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130390810230824/Justin_Bieber_-_As_Long_As_You_Love_Me_ft._Big_SeaMP3_160K.mp3"
+    },
+    {
+        name: "Confident",
+        author: "Justin Bieber ft. Chance The Rapper - YouTube",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130398385143818/Justin_Bieber_-_Confident_ft._Chance_The_Rapper_OMP3_160K.mp3"
+    },
+    {
+        name: "Intentions",
+        author: "Justin Bieber ft. Quavo",
+        url: "https://cdn.discordapp.com/attachments/775740994595323954/782130437514067998/Justin_Bieber_-_Intentions_ft._Quavo_Official_VidMP3_160K.mp3"
+    },
 ];
 
 module.exports = songs;
