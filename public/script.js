@@ -158,4 +158,12 @@ $(document).ready(function () {
             $('<div class="ui centered card"><div class="content"><div class="header">Empty Queue</div><div class="meta">No Songs to play next, So it choose a random song next!</div></div></div>').replaceAll("#AllSongsQueue")
         }
     }
+
+    $("#DiscordButton").click(function(){
+        window.open("https://discord.gg/JZjbCTWjqM")
+    })
+
+    $("#YouTubeButton").click(function(){
+        window.open("https://www.youtube.com/channel/UCe21_ExA95OMEQZXco8dPmQ?sub_confirmation=1")
+    })
 })
