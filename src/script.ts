@@ -74,10 +74,8 @@ $(document).ready(() => {
         toast(loop?"Loop has been successfully Enabled":"Loop has been successfully Disabled")
     }
 
-    $.get("/songs", function(data){
-        data.forEach((song, index) => {
-            $("#SongsListArea").append("<tr><td class='center aligned'>"+(index+1)+"</td><td class='center aligned'>"+song.name+"</td><td class='center aligned'>"+song.author+"</td></tr>")
-        })
+    Songs.forEach((song, index) => {
+        $("#SongsListArea").append("<tr><td class='center aligned'>"+(index+1)+"</td><td class='center aligned'>"+song.name+"</td><td class='center aligned'>"+song.author+"</td></tr>")
     })
 
     // Button Click Events
@@ -119,16 +117,14 @@ $(document).ready(() => {
         else if(SongID.length < 0)return toast("Song ID not provided")
         else if(!parseInt(SongID))return toast("Song ID is not a number")
         else {
-            let xd = "/song/"+(parseInt(SongID)-1)
-            $.get(xd, function (data){
-                if(data === "404")return toast("Song not found!")
-                else {
-                    CurrentSong = data
-                    audioElement.setAttribute('src', data.url);
-                    audioElement.play();
-                    toast("Started playing " + CurrentSong.name + " by " + CurrentSong.author)
-                }
-            })
+            let xd = Songs[parseInt(SongID)-1]
+            if(!xd)return toast("Song not found!")
+            else {
+                CurrentSong = xd
+                audioElement.setAttribute('src', CurrentSong.url);
+                audioElement.play();
+                toast("Started playing " + CurrentSong.name + " by " + CurrentSong.author)   
+            }
         }
     })
 
@@ -139,15 +135,13 @@ $(document).ready(() => {
         else if(SongID.length < 0)return toast("Song ID not provided")
         else if(!parseInt(SongID))return toast("Song ID is not a number")
         else {
-            let xd = "/song/"+(parseInt(SongID)-1)
-            $.get(xd, function (data){
-                if(data === "404")return toast("Song not found!")
-                else {
-                    Queue.push(data)
-                    toast(data.name+" has been added to queue")
-                    QueueEvent()
-                }
-            })
+            let xd = Songs[parseInt(SongID)-1]
+            if(!xd)return toast("Song not found!")
+            else {
+                Queue.push(xd)
+                toast(xd.name+" has been added to queue")
+                QueueEvent()
+            }
         }
     })
 
