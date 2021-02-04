@@ -1,16 +1,18 @@
-$(document).ready(function () {
+import Songs from "./songs"
+import Types from "./index.d"
+
+$(document).ready(() => {
     var audioElement = document.createElement('audio');
-    var CurrentSong = {}
-    var Queue = []
+    var CurrentSong: Types.Song = {}
+    var Queue: Types.Song[] = []
     var loop = false
 
     function nextSong() {
-        $.get("/random", function (data) {
-            audioElement.setAttribute('src', data.url);
-            CurrentSong = data
-            toast(CurrentSong.name + " by " + CurrentSong.author+" has been added to queue")
-            audioElement.play();
-        })
+        let data = Songs[Math.floor(Math.random() * Songs.length)]
+        audioElement.setAttribute('src', data.url);
+        CurrentSong = data
+        toast(CurrentSong.name + " by " + CurrentSong.author+" has been added to queue")
+        audioElement.play();
     }
 
     nextSong()
@@ -56,6 +58,7 @@ $(document).ready(function () {
         $("#songStatus").text("Status: Playing")
         $('#songDuration').text("Duration: " + Math.round(audioElement.duration) + " seconds")
         $('#songStatusBar').attr("data-value", Math.round(audioElement.currentTime))
+        //@ts-ignore because this is semantic ui method
         $('#songStatusBar').progress({
             total: Math.round(audioElement.duration),
             value: Math.round(audioElement.currentTime)
@@ -71,10 +74,8 @@ $(document).ready(function () {
         toast(loop?"Loop has been successfully Enabled":"Loop has been successfully Disabled")
     }
 
-    $.get("/songs", function(data){
-        data.forEach((song, index) => {
-            $("#SongsListArea").append("<tr><td class='center aligned'>"+(index+1)+"</td><td class='center aligned'>"+song.name+"</td><td class='center aligned'>"+song.author+"</td></tr>")
-        })
+    Songs.forEach((song, index) => {
+        $("#SongsListArea").append("<tr><td class='center aligned'>"+(index+1)+"</td><td class='center aligned'>"+song.name+"</td><td class='center aligned'>"+song.author+"</td></tr>")
     })
 
     // Button Click Events
@@ -100,6 +101,7 @@ $(document).ready(function () {
     })
 
     $("#songsListButton").click(function (){
+        //@ts-ignore because this is semantic ui method
         $('.ui.modal').modal('show');
     })
 
@@ -109,41 +111,37 @@ $(document).ready(function () {
 
     //Custom Play/Queue
     $("#CustomPlayButton").click(function (){
-        let SongID = $("#customSongInput").val()
+        let SongID = $("#customSongInput").val().toString()
         if(!SongID)return toast("Song ID not provided")
         else if(!SongID.length)return toast("Song ID not provided")
         else if(SongID.length < 0)return toast("Song ID not provided")
         else if(!parseInt(SongID))return toast("Song ID is not a number")
         else {
-            let xd = "/song/"+(parseInt(SongID)-1)
-            $.get(xd, function (data){
-                if(data === "404")return toast("Song not found!")
-                else {
-                    CurrentSong = data
-                    audioElement.setAttribute('src', data.url);
-                    audioElement.play();
-                    toast("Started playing " + CurrentSong.name + " by " + CurrentSong.author)
-                }
-            })
+            let xd = Songs[parseInt(SongID)-1]
+            if(!xd)return toast("Song not found!")
+            else {
+                CurrentSong = xd
+                audioElement.setAttribute('src', CurrentSong.url);
+                audioElement.play();
+                toast("Started playing " + CurrentSong.name + " by " + CurrentSong.author)   
+            }
         }
     })
 
     $("#CustomQueueButton").click(function(){
-        let SongID = $("#customSongInput").val()
+        let SongID = $("#customSongInput").val().toString()
         if(!SongID)return toast("Song ID not provided")
         else if(!SongID.length)return toast("Song ID not provided")
         else if(SongID.length < 0)return toast("Song ID not provided")
         else if(!parseInt(SongID))return toast("Song ID is not a number")
         else {
-            let xd = "/song/"+(parseInt(SongID)-1)
-            $.get(xd, function (data){
-                if(data === "404")return toast("Song not found!")
-                else {
-                    Queue.push(data)
-                    toast(data.name+" has been added to queue")
-                    QueueEvent()
-                }
-            })
+            let xd = Songs[parseInt(SongID)-1]
+            if(!xd)return toast("Song not found!")
+            else {
+                Queue.push(xd)
+                toast(xd.name+" has been added to queue")
+                QueueEvent()
+            }
         }
     })
 

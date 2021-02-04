@@ -1,4 +1,4 @@
-const songs = [
+export default [
     {
         name: "Sing me to sleep",
         author: "Alan Walker",
@@ -426,5 +426,3 @@ const songs = [
         url: "https://cdn.discordapp.com/attachments/775740994595323954/782130437514067998/Justin_Bieber_-_Intentions_ft._Quavo_Official_VidMP3_160K.mp3"
     },
 ];
-
-module.exports = songs;
