@@ -9,6 +9,7 @@ $(document).ready(function () {
             audioElement.setAttribute('src', data.url);
             CurrentSong = data
             toast(CurrentSong.name + " by " + CurrentSong.author+" has been added to queue")
+            audioElement.play();
         })
     }
 
