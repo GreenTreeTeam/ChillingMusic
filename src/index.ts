@@ -106,7 +106,15 @@ $(document).ready(() => {
     })
 
     $("#nextButton").click(function (){
-        nextSong()
+        if(Queue[0]){
+            let data = Queue[0]
+            audioElement.setAttribute('src', data.url);
+            CurrentSong = data
+            toast(CurrentSong.name + " by " + CurrentSong.author+" has been added to queue")
+            audioElement.play();
+            Queue.shift()
+            QueueEvent()
+        }else nextSong()
     })
 
     //Custom Play/Queue
@@ -147,14 +155,11 @@ $(document).ready(() => {
 
     QueueEvent()
 
-    function QueueEvent(){
-        console.log(Queue)
+    async function QueueEvent(){
         if(Queue.length > 0){
-            let things = Queue.map(a => '<div class="ui centered card"><div class="content"><div class="header">'+a.name+'</div><div class="meta">by '+a.author+'</div></div></div>').join("\n")
-            console.log(things)
-            $("#AllSongsQueue").replaceWith(things)
+            $("#AllSongsQueue").html(Queue.map(a => '<div class="ui centered card"><div class="content"><div class="header">'+a.name+'</div><div class="meta">by '+a.author+'</div></div></div>').join("\n"))
         }else if(Queue.length <= 0){
-            $('<div class="ui centered card"><div class="content"><div class="header">Empty Queue</div><div class="meta">No Songs to play next, So it choose a random song next!</div></div></div>').replaceAll("#AllSongsQueue")
+            $("#AllSongsQueue").html('<div class="ui centered card"><div class="content"><div class="header">Empty Queue</div><div class="meta">No Songs to play next, So it choose a random song next!</div></div></div>')
         }
     }
 
