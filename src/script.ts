@@ -123,7 +123,7 @@ $(document).ready(() => {
                 CurrentSong = xd
                 audioElement.setAttribute('src', CurrentSong.url);
                 audioElement.play();
-                toast("Started playing " + CurrentSong.name + " by " + CurrentSong.author)   
+                toast("Started playing " + CurrentSong.name + " by " + CurrentSong.author)
             }
         }
     })
