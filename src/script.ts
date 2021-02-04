@@ -1,16 +1,18 @@
-$(document).ready(function () {
+import Songs from "./songs"
+import Types from "./index.d"
+
+$(document).ready(() => {
     var audioElement = document.createElement('audio');
-    var CurrentSong = {}
-    var Queue = []
+    var CurrentSong: Types.Song = {}
+    var Queue: Types.Song[] = []
     var loop = false
 
     function nextSong() {
-        $.get("/random", function (data) {
-            audioElement.setAttribute('src', data.url);
-            CurrentSong = data
-            toast(CurrentSong.name + " by " + CurrentSong.author+" has been added to queue")
-            audioElement.play();
-        })
+        let data = Songs[Math.floor(Math.random() * Songs.length)]
+        audioElement.setAttribute('src', data.url);
+        CurrentSong = data
+        toast(CurrentSong.name + " by " + CurrentSong.author+" has been added to queue")
+        audioElement.play();
     }
 
     nextSong()
@@ -56,6 +58,7 @@ $(document).ready(function () {
         $("#songStatus").text("Status: Playing")
         $('#songDuration').text("Duration: " + Math.round(audioElement.duration) + " seconds")
         $('#songStatusBar').attr("data-value", Math.round(audioElement.currentTime))
+        //@ts-ignore because this is semantic ui method
         $('#songStatusBar').progress({
             total: Math.round(audioElement.duration),
             value: Math.round(audioElement.currentTime)
@@ -100,6 +103,7 @@ $(document).ready(function () {
     })
 
     $("#songsListButton").click(function (){
+        //@ts-ignore because this is semantic ui method
         $('.ui.modal').modal('show');
     })
 
@@ -109,7 +113,7 @@ $(document).ready(function () {
 
     //Custom Play/Queue
     $("#CustomPlayButton").click(function (){
-        let SongID = $("#customSongInput").val()
+        let SongID = $("#customSongInput").val().toString()
         if(!SongID)return toast("Song ID not provided")
         else if(!SongID.length)return toast("Song ID not provided")
         else if(SongID.length < 0)return toast("Song ID not provided")
@@ -129,7 +133,7 @@ $(document).ready(function () {
     })
 
     $("#CustomQueueButton").click(function(){
-        let SongID = $("#customSongInput").val()
+        let SongID = $("#customSongInput").val().toString()
         if(!SongID)return toast("Song ID not provided")
         else if(!SongID.length)return toast("Song ID not provided")
         else if(SongID.length < 0)return toast("Song ID not provided")
