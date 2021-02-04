@@ -170,4 +170,8 @@ $(document).ready(() => {
     $("#YouTubeButton").click(function(){
         window.open("https://www.youtube.com/channel/UCe21_ExA95OMEQZXco8dPmQ?sub_confirmation=1")
     })
+
+    $("#GithubButton").click(function(){
+        window.open("https://github.com/GreenTreeTeam/ChillingMusic")
+    })
 })
