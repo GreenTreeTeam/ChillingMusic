@@ -1,1 +1,1 @@
-module.exports = 57
+module.exports = 47
