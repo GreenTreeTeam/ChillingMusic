@@ -1,0 +1,30 @@
+name: update
+
+on:
+  push:
+    branches:
+      - master
+  schedule:
+    - cron: '0 23 * * *'
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 🎏 Fetch repo
+        uses: actions/checkout@master
+        with:
+          fetch-depth: 1
+      - name: ✨ Change Song
+        run: |
+          cd ${GITHUB_WORKSPACE}/
+          npm i
+          node src/UpdateTodaySong.js
+      - name: 🚀 Deploy
+        run: |
+          git config user.name "${GITHUB_ACTOR}"
+          git config user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+          git add .
+          git commit -am "Today's Song Updated"
+          git push --all -f https://${{ secrets.GITHUB_TOKEN }}@github.com/${GITHUB_REPOSITORY}.git
