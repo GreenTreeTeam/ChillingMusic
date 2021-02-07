@@ -100,6 +100,22 @@ $(document).ready(() => {
         toast("Current song has been successfully restarted!")
     })
 
+    $("#VolumeControl").on('input', (data) => {
+        let volume = parseInt($("#VolumeControl").val())
+        if(volume === 1)volume = 0.1
+        else if(volume === 2)volume = 0.2
+        else if(volume === 3)volume = 0.3
+        else if(volume === 4)volume = 0.4
+        else if(volume === 5)volume = 0.5
+        else if(volume === 6)volume = 0.6
+        else if(volume === 7)volume = 0.7
+        else if(volume === 8)volume = 0.8
+        else if(volume === 9)volume = 0.9
+        else if(volume === 10)volume = 1.0
+        else volume = 0.0
+        audioElement.volume = volume
+    })
+
     $("#loopButton").click(function (){
         triggerLoop()
     })

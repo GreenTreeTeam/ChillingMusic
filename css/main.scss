@@ -7,11 +7,15 @@ body {
 }
 
 .mainHeader {
-    margin-top: 10px;
+    padding-top: 10px;
 }
 
 .controlingArea {
-    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.volumeControlArea {
+    padding-top: 20px;
 }
 
 .controlButtons {
@@ -20,7 +24,7 @@ body {
 }
 
 .musicInformantion {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .centered {
@@ -29,11 +33,11 @@ body {
 }
 
 .songQueue {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 .socialLinks {
-    margin-top: 20px;
+    padding-top: 20px;
 }
 
 /* The snackbar - position it at the bottom and in the middle of the screen */

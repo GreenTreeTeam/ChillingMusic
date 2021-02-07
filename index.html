@@ -21,7 +21,7 @@
     <body>
         <div class="mainHeader">
             <h1 class="ui center aligned inverted header" style="font-family: 'Balsamiq Sans', cursive;">Chilling Music</h1>
-            <h2 class="ui center aligned inverted sub header" style="font-family: 'Balsamiq Sans', cursive;margin-top: 4px;">Welcome to Chilling Music, The place where you can listen to music and relax and enjoy your time 24/7!</h2>
+            <h2 class="ui center aligned inverted sub header" style="font-family: 'Balsamiq Sans', cursive;padding-top: 4px;">Welcome to Chilling Music, The place where you can listen to music and relax and enjoy your time 24/7!</h2>
         </div>
 
         <div class="controlingArea">
@@ -35,6 +35,11 @@
                 <button id="todaySongButton" class="ui yellow labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="music icon"></i>Today's Song</button>
                 <button id="nextButton" class="ui violet labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="arrow circle right icon"></i>Next</button>
             </div>
+        </div>
+
+        <div class="volumeControlArea centered">
+            <h4 class="ui horizontal divider inverted header" style="font-family: 'Balsamiq Sans', cursive;"><i class="volume up icon"></i>&nbsp;&nbsp;Volume Control<i class="volume up icon"></i></h4>
+            <input type="range" name="Volume" id="VolumeControl" min="1" max="10">
         </div>
 
         <div class="musicInformantion">
@@ -108,7 +113,7 @@
                     <input type="text" id="customSongInput" placeholder="Enter song ID">
                 </div>
                 <br>
-                <button id="CustomPlayButton" class="ui yellow labeled icon button" style="font-family: 'Balsamiq Sans', cursive;margin-top: 10px;"><i class="play icon"></i>Quick Play</button>
+                <button id="CustomPlayButton" class="ui yellow labeled icon button" style="font-family: 'Balsamiq Sans', cursive;padding-top: 10px;"><i class="play icon"></i>Quick Play</button>
                 <button id="CustomQueueButton" class="ui pink labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="play icon"></i>Add to queue</button>
             </div>
         </div>
