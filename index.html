@@ -32,6 +32,7 @@
                 <button id="restartButton" class="ui green labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="redo icon"></i>Restart</button>
                 <button id="loopButton" class="ui orange labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="sync icon"></i>Loop Song</button>
                 <button id="songsListButton" class="ui red labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="list icon"></i>Songs List</button>
+                <button id="todaySongButton" class="ui yellow labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="music icon"></i>Today's Song</button>
                 <button id="nextButton" class="ui violet labeled icon button" style="font-family: 'Balsamiq Sans', cursive;"><i class="arrow circle right icon"></i>Next</button>
             </div>
         </div>
@@ -72,6 +73,31 @@
             </div>
             <div class="actions">
                 <div class="ui approve button">Got it!</div>
+            </div>
+        </div>
+
+        <div id="TodaySongModel" class="ui modal">
+            <h1 class="ui header">
+                Today's Song
+                <div class="sub header">A random song which is selected by Automatically Eachday</div>
+            </h1>
+            <div class="scrolling content" style="color: black;">
+                <table class="ui selectable inverted table">
+                    <thead>
+                        <tr>
+                            <th class="center aligned">Song ID</th>
+                            <th class="center aligned">Song Name</th>
+                            <th class="center aligned">Song Author</th>
+                      </tr>
+                    </thead>
+                    <tbody id="TodaySongList">
+
+                    </tbody>
+                  </table>
+            </div>
+            <div class="actions">
+                <div class="ui violet button" id="TodaySongPlay">Play</div>
+                <div class="ui grey approve button">Got it!</div>
             </div>
         </div>
 

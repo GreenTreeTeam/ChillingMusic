@@ -1,11 +1,13 @@
 import Songs from "./songs"
 import Types from "./index.d"
+import TodaySongID from "./todaySongID"
 
 $(document).ready(() => {
     var audioElement = document.createElement('audio');
     var CurrentSong: Types.Song = {}
     var Queue: Types.Song[] = []
     var loop = false
+    var TodaySong = Songs[TodaySongID-1]
 
     function nextSong() {
         let data = Songs[Math.floor(Math.random() * Songs.length)]
@@ -78,6 +80,8 @@ $(document).ready(() => {
         $("#SongsListArea").append("<tr><td class='center aligned'>"+(index+1)+"</td><td class='center aligned'>"+song.name+"</td><td class='center aligned'>"+song.author+"</td></tr>")
     })
 
+    $("#TodaySongList").append("<tr><td class='center aligned'>"+(TodaySongID)+"</td><td class='center aligned'>"+TodaySong.name+"</td><td class='center aligned'>"+TodaySong.author+"</td></tr>")
+
     // Button Click Events
     $("#playButton").click(function (){
         audioElement.play();
@@ -102,7 +106,20 @@ $(document).ready(() => {
 
     $("#songsListButton").click(function (){
         //@ts-ignore because this is semantic ui method
-        $('.ui.modal').modal('show');
+        $('#SongsListModel').modal('show');
+    })
+
+    $("#todaySongButton").click(function (){
+        //@ts-ignore because this is semantic ui method
+        $('#TodaySongModel').modal('show');
+    })
+
+    $("#TodaySongPlay").click(() => {
+        let data = TodaySong
+        audioElement.setAttribute('src', data.url);
+        CurrentSong = data
+        toast(CurrentSong.name + " by " + CurrentSong.author+" has been started playing")
+        audioElement.play();
     })
 
     $("#nextButton").click(function (){

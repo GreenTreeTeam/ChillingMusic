@@ -1,4 +1,4 @@
-export default [
+module.exports = [
     {
         name: "Sing me to sleep",
         author: "Alan Walker",
