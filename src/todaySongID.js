@@ -1,6 +1,7 @@
+
 /*!
  * ChillingMusic
  * https://github.com/GreenTreeTeam/ChillingMusic/
  * Licensed MIT © GreenTree Team
  */
-module.exports = 47
+module.exports = 1
