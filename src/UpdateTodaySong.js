@@ -1,3 +1,8 @@
+/*!
+ * ChillingMusic
+ * https://github.com/GreenTreeTeam/ChillingMusic/
+ * Licensed MIT © GreenTree Team
+ */
 const fs = require('fs');
 const path = require('path');
 const Song = require('./songs');
@@ -17,5 +22,11 @@ const Song = require('./songs');
     }
 
     await GenSongID()
-    fs.writeFileSync(todaySongIDpath, `module.exports = ${NewSongID}`)
+    fs.writeFileSync(todaySongIDpath, `
+/*!
+ * ChillingMusic
+ * https://github.com/GreenTreeTeam/ChillingMusic/
+ * Licensed MIT © GreenTree Team
+ */
+module.exports = ${NewSongID}`)
 })()

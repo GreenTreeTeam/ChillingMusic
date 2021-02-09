@@ -1,3 +1,10 @@
+/*!
+ * ChillingMusic
+ * https://github.com/GreenTreeTeam/ChillingMusic/
+ * Licensed MIT © GreenTree Team
+ * 
+ * Maintained by @SudhanPlayz
+ */
 import Songs from "./songs"
 import Types from "./index.d"
 import TodaySongID from "./todaySongID"
@@ -101,7 +108,7 @@ $(document).ready(() => {
     })
 
     $("#VolumeControl").on('input', (data) => {
-        let volume = parseInt($("#VolumeControl").val())
+        let volume = parseInt($("#VolumeControl").val().toString())
         if(volume === 1)volume = 0.1
         else if(volume === 2)volume = 0.2
         else if(volume === 3)volume = 0.3
@@ -187,6 +194,13 @@ $(document).ready(() => {
     })
 
     QueueEvent()
+
+    $("#SongSearchInput").on("input", () => {
+        let value = $("#SongSearchInput").val()
+        let findIndex = (n: string) => Songs.findIndex(a => a.name.toLowerCase() === n.toLowerCase())
+        let Suggestions = Songs.filter(x => new RegExp(`^${value}`, "i").test(x.name) || new RegExp(`^${value}`, "i").test(x.author)).map((song) => "<tr><td class='center aligned'>"+(findIndex(song.name)+1)+"</td><td class='center aligned'>"+song.name+"</td><td class='center aligned'>"+song.author+"</td></tr>")
+        $("#SongsListArea").html(Suggestions.join("\n"))
+    })
 
     async function QueueEvent(){
         if(Queue.length > 0){

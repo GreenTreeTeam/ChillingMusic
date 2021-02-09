@@ -1,3 +1,8 @@
+/*!
+ * ChillingMusic
+ * https://github.com/GreenTreeTeam/ChillingMusic/
+ * Licensed MIT © GreenTree Team
+ */
 module.exports = [
     {
         name: "Sing me to sleep",

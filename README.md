@@ -49,6 +49,7 @@
 ### Built With
 
 * [Github Codespaces Beta <3](https://github.com/features/codespaces)
+* [Semantic UI <3](https://semantic-ui.com/)
 * [SCSS](https://sass-lang.com/)
 * [Parcel](https://parceljs.org/)
 
@@ -59,9 +60,9 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
-* npm
+* parcel as global
   ```sh
-  npm install npm@latest -g
+  npm install parcel@latest -g
   ```
 
 ### Installation
@@ -74,7 +75,11 @@ This is an example of how to list things you need to use the software and how to
    ```sh
    yarn
    ```
-
+3. Build
+   ```sh
+   parcel build index.html
+   ```
+   
 ## Usage
 
 You can able to check out the buttons on the website to control the music
