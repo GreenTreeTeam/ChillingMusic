@@ -1,1 +1,6 @@
-module.exports = 54
+/*!
+ * ChillingMusic
+ * https://github.com/GreenTreeTeam/ChillingMusic/
+ * Licensed MIT © GreenTree Team
+ */
+module.exports = 1;
