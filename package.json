@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "parcel index.html --port 3000",
-    "build": "parcel build index.html",
+    "build": "parcel build index.html && node src/PostBuild.js",
     "start": "node index.js"
   },
   "keywords": [
