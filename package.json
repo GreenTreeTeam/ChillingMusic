@@ -16,7 +16,7 @@
   "dependencies": {
     "@types/jquery": "^3.5.5",
     "@types/node": "^14.14.25",
-    "parcel": "^1.12.4"
+    "parcel": "1.12.4"
   },
   "devDependencies": {
     "sass": "^1.32.6",
