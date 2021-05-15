@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/GreenTreeTeam/ChillingMusic">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="https://github.com/GreenTreeTeam/ChillingMusic/blob/master/images/logo.png" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">ChillingMusic</h3>
