@@ -1,25 +1,48 @@
 {
   "name": "chillingmusic",
-  "version": "1.0.0",
-  "description": "https://chillingmusic.cf",
-  "main": "index.js",
-  "scripts": {
-    "test": "parcel index.html --port 3000",
-    "build": "parcel build index.html && node src/PostBuild.js",
-    "start": "node index.js"
-  },
-  "keywords": [
-    "Music"
-  ],
-  "author": "SudhanPlayz",
-  "license": "MIT",
+  "version": "2.0.0",
+  "description": "Welcome to Chilling Music, The place where you can listen to music and relax and enjoy your time 24/7! | https://chillingmusic.cf",
+  "private": true,
   "dependencies": {
-    "@types/jquery": "^3.5.5",
-    "@types/node": "^14.14.25",
-    "parcel": "^1.12.4"
+    "@testing-library/jest-dom": "^5.11.4",
+    "@testing-library/react": "^11.1.0",
+    "@testing-library/user-event": "^12.1.10",
+    "@types/jest": "^26.0.15",
+    "@types/node": "^12.0.0",
+    "@types/react": "^17.0.0",
+    "@types/react-dom": "^17.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "sass": "^1.34.1",
+    "semantic-ui-css": "^2.4.1",
+    "semantic-ui-react": "^2.0.3",
+    "typescript": "^4.1.2",
+    "web-vitals": "^1.0.1"
   },
-  "devDependencies": {
-    "sass": "^1.32.6",
-    "typescript": "^4.1.3"
-  }
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": "GreenTreeTeam"
 }
