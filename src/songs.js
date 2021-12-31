@@ -422,7 +422,7 @@ module.exports = [
     },
     {
         name: "Confident",
-        author: "Justin Bieber ft. Chance The Rapper - YouTube",
+        author: "Justin Bieber ft. Chance The Rapper",
         url: "https://cdn.discordapp.com/attachments/775740994595323954/782130398385143818/Justin_Bieber_-_Confident_ft._Chance_The_Rapper_OMP3_160K.mp3"
     },
     {
