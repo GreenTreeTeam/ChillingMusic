@@ -46,6 +46,8 @@
 
 ![Screenshot](https://github.com/GreenTreeTeam/ChillingMusic/blob/master/images/screenshot.png)
 
+Chilling Music is a website for users to queue, listen to, and enjoy music. Search songs by ID and add them to the queue. Loop songs, view a songs list, and listen to Today's Song, updated daily.
+
 ### Built With
 
 * [Github Codespaces Beta <3](https://github.com/features/codespaces)
@@ -60,6 +62,7 @@ To get a local copy up and running follow these simple steps.
 ### Prerequisites
 
 This is an example of how to list things you need to use the software and how to install them.
+* install Node.js and npm from website
 * parcel as global
   ```sh
   npm install parcel@latest -g
@@ -72,21 +75,42 @@ This is an example of how to list things you need to use the software and how to
    git clone https://github.com/GreenTreeTeam/ChillingMusic.git
    ```
 2. Install NPM packages
+   ```
+   npm install --global yarn
+   ```
    ```sh
    yarn
    ```
-3. Build
+4. Build (In ChillingMusic Directory)
    ```sh
    parcel build index.html
    ```
    
 ## Usage
 
-You can able to check out the buttons on the website to control the music
+You can play with the buttons and other functionality on the website to control the music.
+
+1. Play: Play current song
+2. Pause: Pause current song
+3. Restart: Restart current song
+4. Loop Song: Loop current song
+5. Songs List: View songs list and select song
+6. Today's Song: Different song updated daily
+7. Next: Play next song in queue
+8. Quick Play: Play random song
+9. Add to queue: add search song to queue
+10. Type song IDs into search bar to find songs you want to listen to.
 
 ## Roadmap
 
 See the [open issues](https://github.com/GreenTreeTeam/ChillingMusic/issues) for a list of proposed features (and known issues).
+
+**Issues**
+- When running parcel build index.html: @parcel/namer-default: Target "main" declares an output file path of "index.js" which does not match the compiled bundle
+ type "html".
+- Socials links not working
+- Status: Loading permanently, likely due to not building correctly
+  
 
 ## Contributing
 
